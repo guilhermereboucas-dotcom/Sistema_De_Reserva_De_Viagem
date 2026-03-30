@@ -5,8 +5,8 @@ import Facade.Dominio.Reserva;
 public class ComprovanteService {
 
     public Reserva gerarComprovante(String destino){
-        Reserva reserva = new Reserva();
-        System.out.println("Comprovante Gerado");
+        Reserva reserva = new Reserva(destino);
+        System.out.println("Comprovante gerado");
         return reserva;
     }
 
